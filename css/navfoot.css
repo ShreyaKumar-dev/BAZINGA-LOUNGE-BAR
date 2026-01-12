@@ -1,0 +1,150 @@
+/* Navbar - Bazinga luxe transparent + condense on scroll */
+.nav-transparent{
+    background: transparent;
+    transition: padding 240ms cubic-bezier(.2,.9,.3,1), background 240ms, box-shadow 240ms;
+    padding: 20px 0 10px;
+    z-index: 1030;
+}
+
+.nav-bigscreen{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Shrink state */
+.nav-condensed{
+    padding: 5px !important;
+    background: linear-gradient(to right, rgba(0, 0, 0,0.5), rgba(85, 85, 85, 0.5), rgba(0, 0, 0,0.5));
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* box-shadow: 0 6px 24px rgba(0,0,0,0.6); */
+    border: 1px solid rgba(255,255,255,0.04);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* animation: liquidMove 6s infinite ease-in-out; */
+    filter: url(#liquid);
+    
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    transition: padding 240ms cubic-bezier(.2,.9,.3,1), background 240ms, box-shadow 240ms, width 240ms, left 0ms, transform 240ms, border-radius 240ms;
+    margin-top: 20px;
+}
+
+/* Liquid movement animation */
+@keyframes liquidMove {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+.nav-condensed .nav-socials{
+    padding-right: 20px;
+}
+
+/* Brand logo sizing */
+.nav-logo{
+    height: 90px;
+    transition: height 240ms ease, transform 240ms ease
+}
+
+.nav-condensed .nav-logo{
+    height: 50px;
+    transform:translateY(-2px);
+}
+
+/* Nav link style */
+.nav-transparent .nav-link{
+    color:rgba(255,255,255,0.92);
+    transition:color 180ms;
+}
+.nav-transparent .nav-link:hover{color:var(--accent);}
+
+/* Social icons */
+.nav-socials .social-link{
+    color:rgba(255,255,255,0.88);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition:all 180ms;
+}
+
+.nav-socials .social-link:hover{
+    color:var(--accent);
+    transform:translateY(-2px);
+    transition:all 180ms;
+}
+
+/* Mobile: collapse right side below */
+@media (max-width:992px){
+  .nav-socials{margin-top:12px}
+
+  .navbar-collapse{
+    background:linear-gradient(180deg, rgba(7,4,6,0.98), rgba(7,4,6,0.96));
+    padding:16px;
+    border-radius:8px;}
+}
+
+/* Optional small sticky booking microbar under nav when condensed (if you want) */
+#microBar{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;z-index:1040}
+
+
+/* ============================= */
+/* TABLET & MOBILE ADJUSTMENTS */
+/* ============================= */
+
+@media (max-width: 991px) {
+
+  .nav-bigscreen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    height: 70px;
+  }
+
+  .navbar-collapse {
+    margin-top: 12px;
+    background: linear-gradient(
+      180deg,
+      rgba(7, 4, 6, 0.98),
+      rgba(7, 4, 6, 0.95)
+    );
+    border-radius: 14px;
+    padding: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* ============================= */
+/* SMALL MOBILE SCREENS */
+/* ============================= */
+
+@media (max-width: 576px) {
+
+  .nav-logo {
+    height: 60px;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-collapse {
+    padding: 18px;
+  }
+}

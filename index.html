@@ -17,18 +17,73 @@
 	<!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Navbar & Footer -->
+    <link rel="stylesheet" href="./css/navfoot.css">
 	<!-- master stylesheet -->
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- Responsive stylesheet -->
 	<link rel="stylesheet" href="./css/responsive.css">
-    <!-- Navbar & Footer -->
-     <link rel="stylesheet" href="./css/navfoot.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
 
     <script src="https://kit.fontawesome.com/4e04d65d77.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav id="bazingaNav" class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+        <div class="container nav-bigscreen">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+            <img src="./assets/icons/BAZINGA.svg" alt="BAZINGA" id="navLogo" class="nav-logo">
+            </a>
+            <!-- Toggle button (Tablet & Mobile) -->
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#bazingaNavbar"
+            aria-controls="bazingaNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse justify-content-center" id="bazingaNavbar">
+            <!-- Nav links -->
+                <ul class="navbar-nav gap-lg-5 text-center mb-3 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <!-- Socials (shown inside menu on mobile) -->
+                <div class="d-lg-none d-flex justify-content-center gap-4 mt-3">
+                    <a href="https://www.instagram.com/bazinganights/" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61583366472437" class="social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/918010320559" class="social-link">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Socials (Desktop only) -->
+            <div class="d-none d-lg-flex align-items-center gap-4 nav-socials">
+                <a href="https://www.instagram.com/bazinganights/" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61583366472437" class="social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/918010320559" class="social-link">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <!-- The video -->
     <video autoplay muted loop id="myVideo">
     <source src="./assets/images/homepage/HeroBG.mp4" type="video/mp4">
@@ -55,5 +110,7 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/navfoot.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
