@@ -257,9 +257,24 @@ textarea::placeholder {
 /* ===============================
           ABOUT US PAGE
 =============================== */
+/* .about-hero-section{
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+  background: url("../assets/images/aboutus/About-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  margin: 0;
+  padding: 0;
+}
+
 .about-hero{
   display: flex;
   width: 100%;
+  height: 100dvh;
   align-items: center;
   justify-content: center;
   background: #fff url('../assets/images/aboutus/About-hero.jpg');
@@ -268,6 +283,8 @@ textarea::placeholder {
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
+  filter: grayscale(0%);
+  z-index: 100;
 }
 
 .about-section h1{
@@ -276,16 +293,49 @@ textarea::placeholder {
   font-size: 250px;
   letter-spacing: 20px;
   color: transparent;
+} */
+
+
+.abt-hero {
+    height: 100vh;
+    background: url("../assets/images/aboutus/About-hero.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about-section p{
-  font-style: italic;
-  text-shadow: 0px 0px 5px #fac555, 0px 0px 15px #fac555, 0px 0px 20px #fac555, 0px 0px 30px #f2780c, 0px 0px 40px #f2780c;
-  font-family: 'Blosta Script';
-  word-spacing: 10px;
-  letter-spacing: 3px;
-  font-size: 40px;
-  margin-top: -230px;
+.abt-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.abt-hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.abt-hero-title {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: 10px;
+    background: linear-gradient(120deg, #f7f7f7, #8fd3f4, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.abt-hero-subtitle {
+    font-style: italic;
+    text-shadow: 0px 0px 5px #fac555, 0px 0px 15px #fac555, 0px 0px 20px #fac555, 0px 0px 30px #f2780c, 0px 0px 40px #f2780c;
+    font-family: 'Blosta Script';
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    font-size: 40px;
 }
 
 .abt-content{

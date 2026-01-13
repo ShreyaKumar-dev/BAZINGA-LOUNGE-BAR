@@ -31,12 +31,8 @@
 
 <body class="dark-theme">
     <!-- Navbar -->
-    <nav id="bazingaNav" class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+    <nav id="bazingaNav" class="navbar navbar-expand-lg navbar-dark nav-transparent">
         <div class="container nav-bigscreen">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-            <img src="./assets/icons/BAZINGA.svg" alt="BAZINGA" id="navLogo" class="nav-logo">
-            </a>
             <!-- Toggle button (Tablet & Mobile) -->
             <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse"
@@ -47,31 +43,23 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Collapsible content -->
-            <div class="collapse navbar-collapse justify-content-center" id="bazingaNavbar">
+            <div class="collapse navbar-collapse justify-content-center align-items-center" id="bazingaNavbar">
             <!-- Nav links -->
-                <ul class="navbar-nav gap-lg-5 text-center mb-3 mb-lg-0">
+                <ul class="navbar-nav mb-3 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <!-- Logo -->
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/icons/BAZINGA.svg" alt="BAZINGA" id="navLogo" class="nav-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events & Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
-
-                <!-- Socials (shown inside menu on mobile) -->
-                <div class="d-lg-none d-flex justify-content-center gap-4 mt-3">
-                    <a href="https://www.instagram.com/bazinganights/" class="social-link">
-                    <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61583366472437" class="social-link">
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://wa.me/918010320559" class="social-link">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
             </div>
 
-            <!-- Socials (Desktop only) -->
+            <!-- Socials (Desktop only)
             <div class="d-none d-lg-flex align-items-center gap-4 nav-socials">
                 <a href="https://www.instagram.com/bazinganights/" class="social-link">
                     <i class="fa-brands fa-instagram"></i>
@@ -82,17 +70,19 @@
                 <a href="https://wa.me/918010320559" class="social-link">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
-            </div>
+            </div> -->
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <div class="about-section text-center d-flex flex-column justify-content-center align-items-center my-5 py-5">
-        <div class="about-hero my-5">
-            <div><h1>BAZINGA</h1></div>
+    <section class="abt-hero">
+        <div class="abt-overlay"></div>
+
+        <div class="abt-hero-content">
+            <h1 class="abt-hero-title">BAZINGA</h1>
+            <p class="abt-hero-subtitle">Where <span style="color: #FFD700;">Nightlife</span> Meets <span style="color: #FFD700;">Luxury</span></p>
         </div>
-        <p>Where <span style="color: #FFD700;">Nightlife</span> Meets <span style="color: #FFD700;">Luxury</span></p>
-    </div>
+    </section>
 
     <!-- ABOUT US CONTENT -->
     <div class="container my-5 py-5">
