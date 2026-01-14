@@ -376,13 +376,36 @@ textarea::placeholder {
   margin-right: 12px;
 }
 
-.abt-gallery{
-  content: "Clubbing is On";
-}
-
-.abt-gallery-content{
+.abt-gallery-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.abt-gallery-content img{
+  width: 50%;
+}
+
+.abt-gallery-content video{
+  width: 45%;
+  border: 8px solid var(--bg-dark);
+  margin-left: -40px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.neon-text {
+  position: absolute;
+  font-family: 'Blosta Script';
+  font-size: 18rem;
+  color: #f1f1f1;
+  white-space: nowrap;
+  opacity: 1;
+  filter: blur(1px);
+  text-shadow:
+    0 0 10px #f1f1f1,
+    0 0 25px #00ffcc,
+    0 0 50px #f1f1f1,
+    0 0 100px #00ffcccc;
 }
