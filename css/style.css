@@ -281,7 +281,6 @@ textarea::placeholder {
   font-family: "Protest Guerrilla", sans-serif;
   font-weight: 900;
   font-size: 250px;
-  letter-spacing: 20px;
   color: transparent;
 }
 
@@ -397,6 +396,24 @@ textarea::placeholder {
   text-transform: capitalize;
 }
 
-.abt-quote-section{
-  border-top: 2px solid var(--bg-dark);
+/* .abt-quote-section{
+  border-top: 2px solid var(--color-gold);
+} */
+
+.abt-quote-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.abt-quote-text{
+  font-family: 'Brown Sugar', cursive;
+  font-size: 3.5rem;
+  font-weight: 500;
+  /* color: #fac555; */
+  color: var(--text-secondary);
+  text-align: center;
+  width: 100%;
+  text-shadow: 0px 0px 5px var(--text-secondary), 0px 0px 20px linear-gradient(to right, #fac555, #f2780c);
 }
