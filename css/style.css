@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&family=Bebas+Neue&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&family=Bebas+Neue&family=Climate+Crisis:YEAR@1979&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Rubik+Glitch&display=swap');
 
 @font-face {
     font-family: 'Brown Sugar';
@@ -40,7 +40,7 @@
      BACKGROUND COLORS
   =============================== */
   --bg-main: #0a0a0f;               /* Primary Background */
-  --bg-dark: #050508;               /* Deeper Dark Sections */
+  --bg-dark: #000000;               /* Deeper Dark Sections */
   --bg-card: rgba(255, 255, 255, 0.06);
   --bg-glass: rgba(255, 255, 255, 0.12);
   --bg-overlay: rgba(0, 0, 0, 0.6);
@@ -96,7 +96,7 @@
      SHADOWS & GLOWS
   =============================== */
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.4);
-  --shadow-deep: 0 25px 60px rgba(0, 0, 0, 0.6);
+  --shadow-deep: 0 25px 60px #00000099;
 
   --glow-purple: 0 0 25px rgba(225, 6, 255, 0.6);
   --glow-cyan: 0 0 25px rgba(0, 245, 255, 0.6);
@@ -259,87 +259,45 @@ textarea::placeholder {
 /* ===============================
           ABOUT US PAGE
 =============================== */
-/* .about-hero-section{
-  width: 100%;
-  height: 100dvh;
-  overflow: hidden;
-  position: relative;
-  background: url("../assets/images/aboutus/About-hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: grayscale(100%);
-  margin: 0;
-  padding: 0;
-}
-
-.about-hero{
+.abt-hero{
   display: flex;
-  width: 100%;
-  height: 100dvh;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff url('../assets/images/aboutus/About-hero.jpg');
+  position: relative;
+  width: 100%;
+  height: 80dvh;
+  background: #fff url('../assets/images/aboutus/AboutUsContent.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  filter: grayscale(0%);
   z-index: 100;
 }
 
-.about-section h1{
-  font-family: "Rubik Glitch", system-ui;
+.abt-hero h1{
+  /* font-family: "Rubik Glitch", system-ui; */
+  font-family: "Protest Guerrilla", sans-serif;
   font-weight: 900;
   font-size: 250px;
   letter-spacing: 20px;
   color: transparent;
-} */
-
-
-.abt-hero {
-    height: 60dvh;
-    background: url("../assets/images/aboutus/AboutUsContent.jpg") center/cover no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.abt-overlay, .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.65);
-}
-
-.abt-hero-content, .abt-cont-txt {
-    position: relative;
-    text-align: center;
-    z-index: 5;
-    opacity: 1;
-}
-
-.abt-hero-title {
-    font-family: "Rubik Glitch", system-ui;
-    font-weight: 900;
-    font-size: 150px;
-    letter-spacing: 10px;
-    background: linear-gradient(120deg, #f7f7f7, #8fd3f4, #ffffff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
 }
 
 .abt-hero-subtitle {
-    font-style: italic;
-    text-shadow: 0px 0px 5px #fac555, 0px 0px 15px #fac555, 0px 0px 20px #fac555, 0px 0px 30px #f2780c, 0px 0px 40px #f2780c;
+    text-shadow: 
+    0px 0px 5px #fac555, 
+    0px 0px 15px #fac555, 
+    0px 0px 20px #fac555, 
+    0px 0px 30px #f2780c, 
+    0px 0px 40px #f2780c;
     font-family: 'Blosta Script';
+    font-weight: 500;
     word-spacing: 10px;
     letter-spacing: 3px;
-    font-size: 40px;
-    margin-top: -120px;
+    font-size: 80px;
+    margin-top: -130px;
 }
 
 .abt-cont{
@@ -353,11 +311,36 @@ textarea::placeholder {
     position: relative;
 }
 
+.abt-cont-txt{
+  position: relative;
+  margin-top: -350px;
+}
+
+.abt-cont-head h1{
+  font-family: 'Blosta';
+  font-size: 4rem;
+}
+
+.abt-cont-head p{
+  color: #fac555; 
+  font-size: 18px; 
+  font-family: var(--font-accent);
+}
+
 .abt-content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
   text-align: justify;
+  padding: 0px 120px;
+  mix-blend-mode: hard-light;
+}
+
+.abt-content p,
+.abt-content li{
+  line-height: 1.8;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
 }
 
 .abt-checklist{
@@ -376,6 +359,10 @@ textarea::placeholder {
   margin-right: 12px;
 }
 
+.abt-gallery{
+  margin-top: -80px;
+}
+
 .abt-gallery-content {
   display: flex;
   flex-direction: row;
@@ -390,22 +377,26 @@ textarea::placeholder {
 .abt-gallery-content video{
   width: 45%;
   border: 8px solid var(--bg-dark);
-  margin-left: -40px;
+  margin-left: -70px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .neon-text {
-  position: absolute;
+  position: relative;
   font-family: 'Blosta Script';
-  font-size: 18rem;
-  color: #f1f1f1;
-  white-space: nowrap;
-  opacity: 1;
-  filter: blur(1px);
-  text-shadow:
-    0 0 10px #f1f1f1,
-    0 0 25px #00ffcc,
-    0 0 50px #f1f1f1,
-    0 0 100px #00ffcccc;
+  font-size: 12rem;
+  white-space: wrap;
+  text-shadow: 
+    0px 0px 5px #fac555, 
+    0px 0px 15px #fac555, 
+    0px 0px 20px #fac555, 
+    0px 0px 30px #f2780c, 
+    0px 0px 40px #f2780c;
+  margin-bottom: -40px;
+  text-transform: capitalize;
+}
+
+.abt-quote-section{
+  border-top: 2px solid var(--bg-dark);
 }

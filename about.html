@@ -76,24 +76,19 @@
 
     <!-- HERO SECTION -->
     <section class="abt-hero">
-        <div class="abt-overlay"></div>
-
-        <div class="abt-hero-content">
-            <h1 class="abt-hero-title">BAZINGA</h1>
-            <p class="abt-hero-subtitle">Where <span style="color: #FFD700;">Nightlife</span> Meets <span style="color: #FFD700;">Luxury</span></p>
-        </div>
+        <h1>BAZINGA</h1>
+        <p class="abt-hero-subtitle">Where <span style="color: #FFD700;">Nightlife</span> Meets <span style="color: #FFD700;">Luxury</span></p>
     </section>
 
     <!-- ABOUT US CONTENT -->
-    <div class="abt-cont">
-        <div class="container pt-5">
-            <div class="overlay"></div>
+    <div class="abt-cont" style="z-index: -2;">
+        <div class="container">
             <div class="abt-cont-txt">
-                <div class="text-center mb-4" style="opacity: 1;">
-                    <p style="color: #fac555; font-size: 16px;">Every Night Has a Beginning</p>
+                <div class="abt-cont-head text-center mb-4">
+                    <p>Every Night Has a Beginning</p>
                     <h1>This is Ours.</h1>
                 </div>
-                <div class="abt-content mt-5 g-4" style="opacity: 1;">
+                <div class="abt-content mt-5 g-4">
                     <div>
                         <p>Bazinga wasn’t created on paper, it was born on a night filled with laughter, unfinished dreams & the spark to create a nightlife experience that truly feels alive.</p>
                         <p class="pt-3">At Bazinga, we don’t offer perfection. We offer vibes, energy, madness, and moments that glow long after the night ends.</p>
@@ -115,13 +110,22 @@
 
     <!-- Gallery -->
     <div class="abt-gallery pb-5 mb-5">
-        <div class="neon-text neon-left">Clubbing is on</div>
-        <div class="container">
+        <div class="neon-text" style="z-index: -1;">Clubbing is on</div>
+        <div class="container" style="z-index: 10;">
             <div class="abt-gallery-content">
                 <img src="./assets/images/aboutus/Abt-gallery.jpg" alt="Bazinga Gallery" class="rounded">
                 <video autoplay muted loop>
                     <source src="./assets/images/aboutus/About-us.mp4" type="video/mp4">
                 </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bazinga Quote -->
+    <div class="abt-quote-section pb-5 mb-5">
+        <div class="container">
+            <div class="abt-quote-content text-center">
+                <p class="abt-quote-text">"In a world full of trends, we remain timeless."</p>
             </div>
         </div>
     </div>
