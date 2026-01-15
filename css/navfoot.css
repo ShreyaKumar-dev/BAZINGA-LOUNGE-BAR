@@ -55,6 +55,13 @@
   margin-bottom: 10px;
 }
 
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-logo h1{
     font-family: "Bangers", system-ui;
     font-size: 76px;
