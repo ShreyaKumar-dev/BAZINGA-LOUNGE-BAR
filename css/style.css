@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&family=Bebas+Neue&family=Climate+Crisis:YEAR@1979&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Badeen+Display&family=Bangers&family=Bebas+Neue&family=Climate+Crisis:YEAR@1979&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Saira+Stencil+One&display=swap');
 
 @font-face {
     font-family: 'Brown Sugar';
@@ -41,6 +41,7 @@
   =============================== */
   --bg-main: #0a0a0f;               /* Primary Background */
   --bg-dark: #000000;               /* Deeper Dark Sections */
+  --bg-footer: #3D0000;             /* Footer Background */
   --bg-card: rgba(255, 255, 255, 0.06);
   --bg-glass: rgba(255, 255, 255, 0.12);
   --bg-overlay: rgba(0, 0, 0, 0.6);
@@ -411,9 +412,34 @@ textarea::placeholder {
   font-family: 'Brown Sugar', cursive;
   font-size: 3.5rem;
   font-weight: 500;
-  /* color: #fac555; */
   color: var(--text-secondary);
   text-align: center;
   width: 100%;
-  text-shadow: 0px 0px 5px var(--text-secondary), 0px 0px 20px linear-gradient(to right, #fac555, #f2780c);
+  text-shadow: 0px 0px 5px #fac555;
+}
+
+.quote-author {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.bazinga-gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.bazinga-gallery img{
+  width: 100%;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.bazinga-gallery img:hover{
+  transform: scale(1.05);
+}
+
+.bazinga-gallery-div img{
+  margin-bottom: 30px;
 }
