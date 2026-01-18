@@ -33,20 +33,30 @@
     /* transition: height 240ms ease, transform 240ms ease; */
 }
 
-/* Footer styling */
+/*************************************************
+                    Footer styling 
+**************************************************/
 .footer-section {
-    background-color: var(--bg-footer);
+    background-color: #000;
     color: #ffffffeb;
-    padding: 40px 0;
     text-align: center;
 }
 
+.footer-social-handles i{
+    font-size: 22px;
+}
+
+.footer-contact-us{
+  text-align: left;
+}
+
 .footer-content{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: reapeat(2, 1fr);
+    gap: 40px;
     align-items: start;
     justify-content: space-between;
-    /* padding: 0px 150px; */
+    border-top: 1px solid #333;
 }
 
 .footer-content li{

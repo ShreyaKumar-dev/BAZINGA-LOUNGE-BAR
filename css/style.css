@@ -149,26 +149,12 @@
 =============================== */
 body {
   min-height: 100vh;
-
-  /* background: radial-gradient(
-      circle at top,
-      rgba(225, 6, 255, 0.15),
-      transparent 40%
-    ),
-    linear-gradient(
-      180deg,
-      var(--bg-main) 0%,
-      var(--bg-dark) 100%
-    ); */
-
   background-color: var(--bg-dark);
-
   color: var(--text-primary);
   font-family: var(--font-primary);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: var(--letter-spacing-normal);
-
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
