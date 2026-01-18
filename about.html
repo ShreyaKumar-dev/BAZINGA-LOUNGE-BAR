@@ -171,25 +171,23 @@
     <!-- Footer -->
     <footer id="bazingaFooter" class="footer-section py-5">
         <div class="container footer-content py-5">
-            <div>
-                <div>
-                    <!-- Contact Us Section -->
-                    <div class="footer-contact-us">
-                        <h1 class="mb-4">Contact Us</h1>
-                        <div class="footer-social-handles d-flex gap-4 mb-4">
-                            <a href="https://www.instagram.com/bazinganights/" class="social-link">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=61583366472437" class="social-link">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="mailto:info@bazinganights.com" class="footer-contact-link">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                            <a href="https://wa.me/918010320559" class="social-link">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                        </div>
+            <div class="footer-left-sec">
+                <!-- Contact Us Section -->
+                <div class="footer-contact-us">
+                    <h3 class="mb-4">Contact Us</h3>
+                    <div class="footer-social-handles d-flex gap-4 mb-4">
+                        <a href="https://www.instagram.com/bazinganights/" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61583366472437" class="social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="mailto:info@bazinganights.com" class="footer-contact-link">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/918010320559" class="social-link">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
                     </div>
                     <div class="mb-4">
                         <i class="fa-solid fa-phone me-2"></i>
@@ -199,29 +197,39 @@
                         <i class="fa-solid fa-location-dot me-2"></i>
                         <span class="footer-contact-text">BAZINGA Lounge Bar, Plot 23, Near Petrol Pump, Sector 1A, Kopar Khairane, Navi Mumbai, Maharashtra - 400709</span>
                     </div>
-                    <!-- Quick Links -->
-                    <div class="pt-5">
-                        <h1 class="mb-4">Quick Links</h1>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="events.html">Events & Gallery</a></li>
-                        </ul>
-                    </div>
                 </div>
-                <div class="footer-logo pt-5">
-                    <img src="./assets/icons/BAZINGA.svg" alt="Bazinga Logo" class="mb-3" style="height: 150px;">
-                    <h1>BAZINGA</h1>
-                    <h3>Lounge Bar</h3>
+                <!-- Quick Links -->
+                <div class="footer-quick-links">
+                    <h3 class="mb-4">Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="events.html">Events & Gallery</a></li>
+                    </ul>
+                </div>
+                <!-- Contact us form -->
+                <div class="footer-contact-form">
+                    <h2 class="mb-4">Send Us a Message</h2>
+                    <p class="mb-4">Kindly fill this form. Average response time is 24 hours.</p>
+                    <form id="footerContactForm" class="footerContactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="footer-submit-btn py-2 rounded-1">Send Message</button>
+                    </form>
                 </div>
             </div>
-            <div class="pt-5">
-                <h1 class="mb-4">SOCIAL</h1>
-                <ul>
-                    <li><a href="https://www.instagram.com/bazinganights/">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=61583366472437">Facebook</a></li>
-                    <li><a href="https://wa.me/918010320559">WhatsApp</a></li>
-                </ul>
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="./assets/icons/BAZINGA.svg" alt="Bazinga Logo" style="height: 150px;">
+                <!-- <h1 class="m-0 p-0">BAZINGA</h1> -->
+                <p>Every night has a story. This one starts at BAZINGA.<br>BAZINGA is a premium lounge bar crafted for nights that deserve more than ordinary.</p>
             </div>
         </div>
     </footer>
